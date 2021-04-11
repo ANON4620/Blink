@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title.value = '';
       note.value = '';
       
-      window.history.back();
+      localStorage.setItem('reload', 'true');
+      window.location.href = 'index.html';
     }
     
   }

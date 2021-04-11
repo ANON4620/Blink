@@ -1,0 +1,42 @@
+body {
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  text-align: center;
+}
+
+#title, #note {
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  padding: 10px 10px;
+  outline: none;
+}
+
+#title {
+  margin-top: 10%;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#note {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15%;
+  border: 2px solid black;
+  resize: none;
+}
+
+#btn {
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 120%;
+  color: red;
+  border: none;
+  outline: none;
+}

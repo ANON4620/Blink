@@ -5,7 +5,9 @@ body {
 }
 
 form {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 100%;
 }
 
 #title, #note {
@@ -35,7 +37,8 @@ form {
   width: 100%;
   text-decoration: none;
   font-family: 'Lexend', sans-serif;
-  font-size: 120%;
+  font-size: 200%;
+  font-weight: bold;
   color: red;
   border: none;
   outline: none;

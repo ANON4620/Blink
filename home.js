@@ -1,8 +1,3 @@
-if(localStorage.getItem('reload') === 'true') {
-  localStorage.removeItem('reload');
-  window.history.go(-2);
-}
-
 const note = JSON.parse(localStorage.getItem('notes'));
 
 

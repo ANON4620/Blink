@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       title.value = '';
       note.value = '';
       
-      localStorage.setItem('reload', 'true');
       window.location.href = 'index.html';
     }
     

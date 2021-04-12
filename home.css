@@ -79,12 +79,18 @@ button:hover {
 }
 
 .deleteBtn {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   float: right;
-  margin-right: 1%;
-  margin-top: 1%;
-  overflow: auto;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 980px) {
+  .deleteBtn {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .delBtnImg {

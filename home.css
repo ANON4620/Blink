@@ -63,6 +63,7 @@ button:hover {
   background-color: white;
   width: 95%;
   margin: 10px auto;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .title {

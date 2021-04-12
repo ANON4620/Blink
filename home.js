@@ -57,7 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML += 
       `<div class="note">
       
-        <div class="deleteBtn" id="${i}" onclick="deleteNote(this.id)">Del</div>
+        <div class="deleteBtn" id="${i}" onclick="deleteNote(this.id)">
+        <img class="delBtnImg" src="deleteBtn.svg" alt="Delete Button">
+        </div>
         
         <div class="title">
           ${note[i].title}

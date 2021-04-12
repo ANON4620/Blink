@@ -92,7 +92,7 @@ body {
 
 .header {
   position: absolute;
-  top: 65vh;
+  top: 70vh;
   text-align: center;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -101,6 +101,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .header {
+    top: 65vh;
     font-size: 100%;
   }
 }

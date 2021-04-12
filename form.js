@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const height = window.innerHeight - 400;
   
   
-  note.style.height = `${height}px`;
+  note.style.height = `${height}px`; // sets the hieght of the element #note
   
   
   let notes = JSON.parse(localStorage.getItem('notes'));

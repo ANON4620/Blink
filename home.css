@@ -17,10 +17,92 @@ body {
 
 .header {
   position: absolute;
-  top: 65%;
+  top: 65vh;
   text-align: center;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 100%;
+  }
+}
+
+nav {
+  color: white;
+  height: 50px;
+  background-color: #42445A;
+}
+
+nav h1 {
+  display: inline-block;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #42445A;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #303955;
+}
+
+.note {
+  border: 2px solid black;
+  border-radius: 3px;
+  margin-top: 5%;
+  background-color: white;
+  width: 95%;
+  margin: 10px auto;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* * {
+  border: 2px solid black;
+}*/
+
+
+body {
+  margin: 0;
+  background-color: #F4CEA1;
+}
+  
+.background {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 50%;
+}
+
+.header {
+  position: absolute;
+  top: 65vh;
+  text-align: center;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 100%;
+  }
 }
 
 nav {

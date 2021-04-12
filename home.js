@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         
       </div>`;
+
+      // .delBtnImg src --> https://icons8.com/icons/set/delete-button
     }
   }
 });

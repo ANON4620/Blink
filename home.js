@@ -3,8 +3,6 @@ const note = JSON.parse(localStorage.getItem('notes'));
 
 function deleteNote(id) {
   document.getElementById(id).parentElement.remove(); // remove element from DOM
-  delete note[id]; // remove element from array
-  // the delete keyword does not remove an element, instead it makes it undefined
   
   const notes_len = note.length; // array length
   const mid_index_notes = notes_len-1 / 2; // middle index of the array
@@ -15,15 +13,15 @@ function deleteNote(id) {
     // move the element in array with index [id] to the last position of the array
     for(let i = id; i < notes_len-1; i++)
       note[i] = note[i + 1]; // move each element of the second half of the array to its previous position
-    note[notes_len-1] = temp; // push the undefined element to the last position of the array
-    note.pop(); // throw the last element(the undefined element) out of the array
+    note[notes_len-1] = temp; // push the element to the last position of the array
+    note.pop(); // throw the last element out of the array
   }
   else {
     // move the element in array with index [id] to the last position of the array
     for(let i = id; i > 0; i--)
       note[i] = note[i - 1]; // move each element of the first half of the array to its next position
-    note[0] = temp; // push the undefined element to the first position of the array
-    note.shift(); // throw the first element(the undefined element) out of the array
+    note[0] = temp; // push the element to the first position of the array
+    note.shift(); // throw the first element out of the array
   }
   
   // if note is a blank array

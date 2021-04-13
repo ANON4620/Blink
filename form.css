@@ -21,16 +21,25 @@ form {
 }
 
 #title {
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 20px;
   font-family: 'Fredoka One', cursive;
 }
 
 #note {
   font-family: 'Montserrat', sans-serif;
-  margin-top: 15%;
+  margin-top: 5%;
   border: 2px solid black;
   resize: none;
+}
+
+@media only screen and (max-width: 500px) {
+  #title {
+    margin-top: 10%;
+  }
+  #note {
+    margin-top: 15%;
+  }
 }
 
 #btn {

@@ -43,7 +43,7 @@ nav h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
+#add-items {
   float: right;
   color: white;
   text-decoration: none;
@@ -60,7 +60,7 @@ button {
   outline: none;
 }
 
-button:hover {
+#add-items:hover {
   background-color: #303955;
 }
 

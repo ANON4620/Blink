@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // if no. of words > 50
       else {
         text = text_words.slice(0, 50).join(' '); // Get the first 50 words
-        text = text + `\n...<button id="read-more${i}" class="read-more" onclick="readMore(this.id)">Read more</button>`; // Adding read more button
+        text += `\n...<button id="read-more${i}" class="read-more" onclick="readMore(this.id)">Read more</button>`; // Adding read more button
       }
 
       container.innerHTML += 

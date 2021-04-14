@@ -1,5 +1,9 @@
 const note = JSON.parse(localStorage.getItem('notes'));
 
+function readMore(id) {
+  const id_number = Number(id.slice(9)); // getting id number
+  document.getElementById(`text${id_number}`).innerHTML = note[id_number].text; // expanding the note
+}
 
 function deleteNote(id) {
   document.getElementById(id).parentElement.remove(); // remove element from DOM
@@ -52,6 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     for(let i = 0; i < notes_len; i++) {
+      
+      let text_words = note[i].text.split(" "); // Get an array of the string
+      let text = '';
+      
+      // if no. of words in the array <= 50
+      if(text_words.length <= 50) {
+        text = note[i].text; // the full note
+      }
+      // if no. of words > 50
+      else {
+        text = text_words.slice(0, 50).join(' '); // Get the first 50 words
+        text = text + `\n...<button id="read-more${i}" class="read-more" onclick="readMore(this.id)">Read more</button>`; // Adding read more button
+      }
+
       container.innerHTML += 
       `<div class="note">
       
@@ -63,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
           ${note[i].title}
         </div>
         
-        <div class="text">
-          ${note[i].text}
+        <div id="text${i}"" class="text">
+          ${text}
         </div>
         
       </div>`;

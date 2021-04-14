@@ -17,81 +17,6 @@ body {
 
 .header {
   position: absolute;
-  top: 65vh;
-  text-align: center;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 200%;
-}
-
-@media only screen and (max-width: 500px) {
-  .header {
-    font-size: 100%;
-  }
-}
-
-nav {
-  color: white;
-  height: 50px;
-  background-color: #42445A;
-}
-
-nav h1 {
-  display: inline-block;
-  margin: 10px;
-  font-family: 'Roboto', sans-serif;
-}
-
-button {
-  float: right;
-  color: white;
-  text-decoration: none;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #42445A;
-  transition-property: background-color;
-  transition-duration: 0.2s;
-  border: none;
-  outline: none;
-}
-
-button:hover {
-  background-color: #303955;
-}
-
-.note {
-  border: 2px solid black;
-  border-radius: 3px;
-  margin-top: 5%;
-  background-color: white;
-  width: 95%;
-  margin: 10px auto;
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-/* * {
-  border: 2px solid black;
-}*/
-
-
-body {
-  margin: 0;
-  background-color: #F4CEA1;
-}
-  
-.background {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  height: 50%;
-}
-
-.header {
-  position: absolute;
   top: 70vh;
   text-align: center;
   width: 100%;
@@ -156,10 +81,21 @@ button:hover {
 }
 
 .text {
-  margin: 10px;
+  margin: 20px 10px;
   font-size: 90%;
-  word-break: break-word;
 }
+
+
+/* https://www-w3docs-com.cdn.ampproject.org/v/s/www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html?amp_js_v=a6&amp_gsa=1&usqp=mq331AQHKAFQArABIA%3D%3D#aoh=16184171774473&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.w3docs.com%2Fsnippets%2Fcss%2Fhow-to-wrap-text-in-a-pre-tag-with-css.html */
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+/* That was the url of the code above which breaks words enclosed within the pre tag */
 
 .deleteBtn {
   width: 50px;
@@ -173,4 +109,16 @@ button:hover {
   overflow: auto;
   width: 100%;
   height: 100%;
+}
+
+.read-more {
+  color: blue;
+  background-color: white;
+  text-decoration: underline;
+  border: none;
+  outline: none;
+}
+
+.read-more:focus {
+  color: deepskyblue;
 }

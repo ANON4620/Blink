@@ -27,6 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
   submit.onclick = () => {
     
     const obj = {};
+    
+    // Replace any '<' or '>' sign with '&lt' and '&gt'
+    // For security
+    if(title.value.includes('<'))
+      title.value = title.value.replace(/</g, '&lt');
+    if(title.value.includes('>'))
+      title.value = title.value.replace(/>/g, '&gt');
+    if(note.value.includes('<'))
+      note.value = note.value.replace(/</g, '&lt');
+    if(note.value.includes('>'))
+      note.value = note.value.replace(/>/g, '&gt');
+
     obj.title = title.value.trim();
     obj.note = note.value.trim();
     
